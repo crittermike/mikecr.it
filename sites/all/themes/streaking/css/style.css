@@ -61,9 +61,23 @@ h1.site-name {
 .front h1.site-name a {
   color: #FF9900;
 }
-.page-drupal-planet h1.page-title,
 .front h1.page-title {
-  display: none;
+  font-size: 90px;
+  text-align: center;
+  display: block !important;
+}
+.front .node p {
+  text-align: center; 
+  margin-top: 30px;
+}
+.front .node img {
+  float: left; 
+  width: 310px; 
+  margin-top: 40px;
+}
+.front .node ul {
+  float: left; 
+  margin-left: 10px;
 }
 
 /**************************
