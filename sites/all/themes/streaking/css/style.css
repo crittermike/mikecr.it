@@ -5,7 +5,7 @@ body {
   background: #424242;
   color: #e9e9e9;
   font-family: 'Cabin', sans-serif;
-  font-size: 120%;
+  font-size: 110%;
   line-height: 1.5;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -74,10 +74,12 @@ h1.site-name {
   float: left; 
   width: 310px; 
   margin-top: 40px;
+  margin-left: 40px;
 }
 .front .node ul {
   float: left; 
   margin-left: 10px;
+  padding-left: 0;
 }
 
 /**************************
@@ -85,10 +87,15 @@ h1.site-name {
  **************************/
 /* Article Node */
 h1.page-title {
+  display: none;
+}
+.node-type-article h1.page-title {
+  display: block;
   line-height: 1.2;
   color: #FF9900;
   margin-bottom: 0;
   font-size: 50px;
+  text-align: center;
 }
 .submitted {
   text-transform: uppercase;
@@ -104,6 +111,7 @@ h1.page-title {
   margin: 10px 0 20px;
   padding-bottom: 20px;
   border-bottom: 1px dashed #3299BB;
+  text-align: center;
 }
 .node p {
   margin: 0 0 20px;
@@ -142,6 +150,12 @@ h1.page-title {
 }
 
 /* Gist */
+.field-item > pre {
+  white-space: pre;
+  word-wrap: normal;
+  font-size: 14px;
+  overflow-x: scroll;
+}
 .gist .gist-file .gist-meta {
   display: none;
 }
@@ -163,19 +177,27 @@ h1.page-title {
 .gist .gist-syntax .na { color: #E6FF00; }
 .gist .gist-syntax .s { color: #3299BB; }
 
+.field-item > pre ::-webkit-scrollbar,
 .gist ::-webkit-scrollbar {
   width: 12px;
 }
+.field-item > pre ::-webkit-scrollbar-track,
 .gist ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
+.field-item > pre ::-webkit-scrollbar-thumb,
 .gist ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 10px;
   border-radius: 10px;
   background: #555;
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+.page-node-32 .node ul li a {
+  font-weight: bold;
+  font-family: 'Enriqueta',serif;
 }
 
 /**************************
@@ -198,5 +220,25 @@ h1.page-title {
   .view-articles .date {
     display: inline;
     text-align: left;
+  }
+  .front .node ul {
+    margin-left: 0;
+    padding-left: 0;
+    text-align: center;
+    float: none;
+  }
+  .front .node img {
+    float: none;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .front .view-articles .separator {
+    display: none;
+  }
+  .front .view-articles .title {
+    display: inline;
+  }
+  .front h1.page-title {
+    line-height: 1;
   }
 }
