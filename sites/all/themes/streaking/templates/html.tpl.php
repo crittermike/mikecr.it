@@ -5,7 +5,7 @@
     <?php print $head; ?>
     <title><?php print $head_title; ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='http://fonts.googleapis.com/css?family=Cabin:400,700,400italic|Enriqueta:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Enriqueta:400,700' rel='stylesheet' type='text/css'>
     <?php print $styles; ?>
 
     <script type="text/javascript">
