@@ -1,6 +1,6 @@
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?>">
 
-  <span class="submitted">On <?php print $date; ?></span>
+  <span class="submitted">Published on <?php print $date; ?></span>
 
   <h1 class="post-title"><?php print $title; ?></h1>
 

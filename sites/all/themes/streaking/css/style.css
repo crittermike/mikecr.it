@@ -19,7 +19,7 @@ h1 { font-size: 50px; margin-top: 0; }
 h2 { font-size: 40px; }
 h3 { font-size: 30px; }
 h4 { font-size: 20px; }
-h5 { font-size: 20px; text-transform: uppercase; color: #aaa; }
+h5 { font-size: 20px; text-transform: uppercase; }
 
 a:link, a:visited, a:active {
   border-bottom: 1px solid #3299bb;
@@ -38,6 +38,21 @@ a:hover {
 .container {
   max-width: 920px;
   margin: 100px auto 0;
+  overflow: hidden;
+  position: relative;
+  left: -110px;
+}
+.footer {
+  background: #333332;
+  color: white;
+  overflow: hidden;
+}
+.footer a:link, .footer a:visited, .footer a:active {
+  color: white;
+}
+.footer-inner {
+  max-width: 700px;
+  margin: 0 auto;
 }
 .content {
   float: right;
@@ -84,7 +99,6 @@ blockquote {
   display: none;
 }
 #disqus_thread {
-  border-top: 1px solid #F2F2F0 !important;
   margin-bottom: 20px;
 }
 
@@ -148,9 +162,10 @@ blockquote {
   padding: 10px 0;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .container {
-    max-width: 75%;
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .container, .footer-inner {
+    max-width: 85%;
+    left: 0;
   }
   .sidebar {
     max-width: 17%;
@@ -179,6 +194,14 @@ blockquote {
     display: none;
   }
   .container {
-    max-width: 80%;
+    max-width: 90%;
+    margin-top: 40px;
+    left: 0;
+  }
+  body {
+    font-size: 120%;
+  }
+  .footer-inner {
+    max-width: 90%;
   }
 }

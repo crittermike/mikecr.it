@@ -23,5 +23,12 @@
     <?php print render($page['content']) ?>
   </div>
 
-  <?php if ($page['footer']): print render($page['footer']); endif; ?>
 </div>
+
+<?php if ($page['footer']): ?>
+  <div class="footer">
+    <div class="footer-inner">
+      <?php print render($page['footer']); ?>
+    </div>
+  </div>
+<?php endif; ?>
