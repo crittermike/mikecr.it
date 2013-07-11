@@ -60,6 +60,8 @@ a:hover {
 }
 .content img {
   width: 100%;
+  height: auto !important;
+  margin-bottom: 20px;
 }
 
 /**************************
@@ -69,13 +71,13 @@ a:hover {
   display: none;
 }
 .node-type-article h1.post-title {
-  margin: 10px 0;
+  margin: 15px 0 5px;
 }
 .node-type-article .content {
   margin-top: -5px;
 }
 .node-type-article .field-name-field-subtitle {
-  font-size: 22px;
+  font-size: 28px;
   font-style: italic;
   margin-bottom: 19px;
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
@@ -100,6 +102,9 @@ blockquote {
 }
 #disqus_thread {
   margin-bottom: 20px;
+}
+.field-name-field-related {
+  margin-bottom: 30px;
 }
 
 /**************************
